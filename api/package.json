@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint \"**/*.{js,jsx}\"",
+    "lint:fix": "./node_modules/.bin/eslint --fix \"**/*.{js,jsx}\"",
+    "prettier": "prettier --check \"**/*.{js,jsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0"
+  }
+}

@@ -11,5 +11,11 @@ parserOptions:
   sourceType: module
 plugins:
   - react
-rules: { "react/prop-types": 0
-}
+rules: { "react/prop-types": 0,
+          "no-restricted-globals": ["error", "event", "fdescribe"],
+          "no-unused-vars": ["error",
+                            {
+                              varsIgnorePattern: "React"
+                            }
+                          ]
+                        }
